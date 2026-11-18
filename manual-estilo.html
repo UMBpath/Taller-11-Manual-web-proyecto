@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Estilo - Marca de Ropa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header principal -->
+    <header class="header">
+        <div class="container">
+            <h1>Manual de Estilo Web</h1>
+            <p>Marca de Ropa - Catálogo Online</p>
+            <p class="subtitle">Guía de componentes visuales para el desarrollo del sitio</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Paleta de colores -->
+        <section class="section" id="colores">
+            <h2 class="section-title">
+                <i class="fas fa-palette"></i> Paleta de Colores
+            </h2>
+            <p class="section-description">Colores principales de la marca para mantener consistencia visual</p>
+            
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box primary">#1a1a2e</div>
+                    <div class="color-info">
+                        <h4>Primario</h4>
+                        <p>Hex: #1a1a2e</p>
+                        <p>RGB: 26, 26, 46</p>
+                        <small>Uso: Fondos oscuros, headers</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box secondary">#16213e</div>
+                    <div class="color-info">
+                        <h4>Secundario</h4>
+                        <p>Hex: #16213e</p>
+                        <p>RGB: 22, 33, 62</p>
+                        <small>Uso: Secciones, cards</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box accent">#0f4c75</div>
+                    <div class="color-info">
+                        <h4>Acento</h4>
+                        <p>Hex: #0f4c75</p>
+                        <p>RGB: 15, 76, 117</p>
+                        <small>Uso: Botones, links activos</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box accent-light">#3282b8</div>
+                    <div class="color-info">
+                        <h4>Acento Claro</h4>
+                        <p>Hex: #3282b8</p>
+                        <p>RGB: 50, 130, 184</p>
+                        <small>Uso: Hover states</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box dark">#212529</div>
+                    <div class="color-info">
+                        <h4>Texto</h4>
+                        <p>Hex: #212529</p>
+                        <p>RGB: 33, 37, 41</p>
+                        <small>Uso: Texto principal</small>
+                    </div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box light">#f8f9fa</div>
+                    <div class="color-info">
+                        <h4>Fondo Claro</h4>
+                        <p>Hex: #f8f9fa</p>
+                        <p>RGB: 248, 249, 250</p>
+                        <small>Uso: Backgrounds</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipografía -->
+        <section class="section" id="tipografia">
+            <h2 class="section-title">
+                <i class="fas fa-font"></i> Tipografía
+            </h2>
+            <p class="section-description">Fuentes usadas en el sitio para texto y títulos</p>
+            
+            <h3 class="subsection-title">Poppins - Fuente Principal</h3>
+            <p class="subsection-desc">Usada para todo el texto del sitio (párrafos, labels, descripciones). Ejemplo de uso de <kbd>kbd</kbd> para mostrar atajos de teclado.</p>
+            <div class="typography-demo">
+                <div class="font-demo">
+                    <h3 class="font-weight-light">Light 300</h3>
+                    <p class="font-weight-light">El rápido zorro marrón salta sobre el perro perezoso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="font-demo">
+                    <h3 class="font-weight-regular">Regular 400</h3>
+                    <p class="font-weight-regular">El rápido zorro marrón salta sobre el perro perezoso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="font-demo">
+                    <h3 class="font-weight-medium">Medium 500</h3>
+                    <p class="font-weight-medium">El rápido zorro marrón salta sobre el perro perezoso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="font-demo">
+                    <h3 class="font-weight-semibold">Semi Bold 600</h3>
+                    <p class="font-weight-semibold">El rápido zorro marrón salta sobre el perro perezoso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="font-demo">
+                    <h3 class="font-weight-bold">Bold 700</h3>
+                    <p class="font-weight-bold">El rápido zorro marrón salta sobre el perro perezoso. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Bebas Neue - Fuente para Títulos (h1-h6)</h3>
+            <p class="subsection-desc">Usada exclusivamente para títulos y headings (h1, h2, h3, h4, h5, h6). No usar para texto regular.</p>
+            <div class="typography-demo">
+                <div class="font-demo">
+                    <h1 class="font-display-regular">H1 - Título Principal</h1>
+                    <h2 class="font-display-regular">H2 - Subtítulo</h2>
+                    <h3 class="font-display-regular">H3 - Sección</h3>
+                    <h4 class="font-display-regular">H4 - Subsección</h4>
+                    <h5 class="font-display-regular">H5 - Título pequeño</h5>
+                    <h6 class="font-display-regular">H6 - Título más pequeño</h6>
+                    <p style="margin-top: 20px; color: var(--color-gray); font-size: 0.9rem;">
+                        <strong>Nota:</strong> Bebas Neue se aplica automáticamente a todos los elementos h1-h6. 
+                        El texto regular (como este párrafo) usa Poppins.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botones -->
+        <section class="section" id="botones">
+            <h2 class="section-title">
+                <i class="fas fa-hand-pointer"></i> Botones
+            </h2>
+            <p class="section-description">Estilos de botones para diferentes acciones y contextos</p>
+            
+            <h3 class="subsection-title">Botones Primarios</h3>
+            <p class="subsection-desc">Para acciones principales (comprar, añadir al carrito, etc.)</p>
+            <div class="button-demo">
+                <button class="btn btn-primary">Botón Primario</button>
+                <button class="btn btn-primary btn-sm">Pequeño</button>
+                <button class="btn btn-primary btn-lg">Grande</button>
+            </div>
+
+            <h3 class="subsection-title">Botones Secundarios</h3>
+            <p class="subsection-desc">Para acciones secundarias o alternativas</p>
+            <div class="button-demo">
+                <button class="btn btn-secondary">Botón Secundario</button>
+                <button class="btn btn-secondary btn-sm">Pequeño</button>
+                <button class="btn btn-secondary btn-lg">Grande</button>
+            </div>
+
+            <h3 class="subsection-title">Botones Outline</h3>
+            <p class="subsection-desc">Para acciones menos prominentes o links con estilo de botón</p>
+            <div class="button-demo">
+                <button class="btn btn-outline">Botón Outline</button>
+                <button class="btn btn-outline btn-sm">Pequeño</button>
+                <button class="btn btn-outline btn-lg">Grande</button>
+            </div>
+
+            <h3 class="subsection-title">Estados del Botón</h3>
+            <p class="subsection-desc">Diferentes estados según la interacción del usuario</p>
+            <div class="button-demo">
+                <button class="btn btn-primary" disabled>Desactivado</button>
+                <button class="btn btn-primary">Normal</button>
+                <button class="btn btn-primary btn-hover-demo">Hover (pasa el mouse)</button>
+            </div>
+        </section>
+
+        <!-- Formularios -->
+        <section class="section" id="formularios">
+            <h2 class="section-title">
+                <i class="fas fa-edit"></i> Formularios
+            </h2>
+            <p class="section-description">Componentes de formulario para captura de datos</p>
+            
+            <div class="form-demo">
+                <div class="form-group">
+                    <label class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" placeholder="Escribe tu nombre aquí">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Mensaje o comentario</label>
+                    <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Seleccionar talla</label>
+                    <select class="form-control">
+                        <option value="">Elige una talla</option>
+                        <option value="xs">XS - Extra Small</option>
+                        <option value="s">S - Small</option>
+                        <option value="m">M - Medium</option>
+                        <option value="l">L - Large</option>
+                        <option value="xl">XL - Extra Large</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Enviar formulario</button>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <section class="section" id="navegacion">
+            <h2 class="section-title">
+                <i class="fas fa-bars"></i> Navegación
+            </h2>
+            <p class="section-description">Barra de navegación principal del sitio</p>
+            
+            <nav class="navbar-demo">
+                <a href="#" class="navbar-brand">MARCA ROPA</a>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Tarjetas de Producto -->
+        <section class="section" id="tarjetas">
+            <h2 class="section-title">
+                <i class="fas fa-th-large"></i> Tarjetas de Producto
+            </h2>
+            <p class="section-description">Diseño de cards para mostrar productos en el catálogo</p>
+            
+            <div class="cards-demo">
+                <div class="card">
+                    <div class="card-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Camiseta Básica</h3>
+                        <p class="card-text">Camiseta de algodón premium, disponible en varios colores. Perfecta para el día a día.</p>
+                        <div class="card-price">$29.99</div>
+                        <button class="btn btn-primary btn-block">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image card-image-dark">
+                        <i class="fas fa-vest"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Chaqueta Elegante</h3>
+                        <p class="card-text">Chaqueta moderna perfecta para cualquier ocasión. Diseño versátil y cómodo.</p>
+                        <div class="card-price">$89.99</div>
+                        <button class="btn btn-primary btn-block">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image card-image-mid">
+                        <i class="fas fa-socks"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pantalón Casual</h3>
+                        <p class="card-text">Pantalón cómodo y versátil para el día a día. Tela resistente y de calidad.</p>
+                        <div class="card-price">$49.99</div>
+                        <button class="btn btn-primary btn-block">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Iconos -->
+        <section class="section" id="iconos">
+            <h2 class="section-title">
+                <i class="fas fa-icons"></i> Iconos
+            </h2>
+            <p class="section-description">Iconos de Font Awesome usados en el sitio</p>
+            
+            <div class="icons-demo">
+                <div class="icon-item">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Tienda</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-user"></i>
+                    <span>Usuario</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-search"></i>
+                    <span>Buscar</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Carrito</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Teléfono</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ubicación</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-star"></i>
+                    <span>Valoración</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Envío</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-undo"></i>
+                    <span>Devolución</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section class="section" id="badges">
+            <h2 class="section-title">
+                <i class="fas fa-tags"></i> Badges y Etiquetas
+            </h2>
+            <p class="section-description">Etiquetas para destacar información importante</p>
+            
+            <h3 class="subsection-title">Badges de estado</h3>
+            <p class="subsection-desc">Para mostrar estado de productos o promociones</p>
+            <div class="badge-demo">
+                <span class="badge badge-primary">Nuevo</span>
+                <span class="badge badge-secondary">Oferta</span>
+                <span class="badge badge-success">En Stock</span>
+                <span class="badge badge-warning">Últimas Unidades</span>
+            </div>
+
+            <h3 class="subsection-title">Tallas disponibles</h3>
+            <p class="subsection-desc">Selector de tallas para productos</p>
+            <div class="badge-demo">
+                <span class="badge badge-primary size-badge">XS</span>
+                <span class="badge badge-primary size-badge">S</span>
+                <span class="badge badge-primary size-badge">M</span>
+                <span class="badge badge-primary size-badge">L</span>
+                <span class="badge badge-primary size-badge">XL</span>
+                <span class="badge badge-primary size-badge">XXL</span>
+            </div>
+        </section>
+
+        <!-- Alerts -->
+        <section class="section" id="alerts">
+            <h2 class="section-title">
+                <i class="fas fa-bell"></i> Alertas y Notificaciones
+            </h2>
+            <p class="section-description">Mensajes para informar al usuario sobre eventos importantes</p>
+            
+            <div class="alert-demo">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> 
+                    <strong>Información:</strong> Este es un mensaje informativo para el usuario.
+                </div>
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle"></i> 
+                    <strong>Éxito:</strong> Producto añadido al carrito correctamente.
+                </div>
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <strong>Advertencia:</strong> Solo quedan 3 unidades disponibles.
+                </div>
+            </div>
+        </section>
+
+        <!-- Espaciado -->
+        <section class="section" id="espaciado">
+            <h2 class="section-title">
+                <i class="fas fa-arrows-alt-h"></i> Sistema de Espaciado
+            </h2>
+            <p class="section-description">Valores de espaciado consistentes en todo el sitio</p>
+            
+            <div class="spacing-demo">
+                <div class="spacing-box spacing-xs">XS - 0.25rem (4px)</div>
+                <div class="spacing-box spacing-sm">SM - 0.5rem (8px)</div>
+                <div class="spacing-box spacing-md">MD - 1rem (16px)</div>
+                <div class="spacing-box spacing-lg">LG - 1.5rem (24px)</div>
+                <div class="spacing-box spacing-xl">XL - 2rem (32px)</div>
+                <div class="spacing-box spacing-xxl">XXL - 3rem (48px)</div>
+            </div>
+        </section>
+
+        <!-- Border Radius -->
+        <section class="section" id="bordes">
+            <h2 class="section-title">
+                <i class="fas fa-square"></i> Border Radius
+            </h2>
+            <p class="section-description">Bordes redondeados para diferentes elementos</p>
+            
+            <div class="radius-demo">
+                <div class="radius-box radius-sm">SM - 4px</div>
+                <div class="radius-box radius-md">MD - 8px</div>
+                <div class="radius-box radius-lg">LG - 12px</div>
+                <div class="radius-box radius-xl">XL - 16px</div>
+            </div>
+        </section>
+
+        <!-- Sombras -->
+        <section class="section" id="sombras">
+            <h2 class="section-title">
+                <i class="fas fa-layer-group"></i> Sombras
+            </h2>
+            <p class="section-description">Efectos de sombra para dar profundidad a los elementos</p>
+            
+            <div class="shadow-demo">
+                <div class="shadow-box shadow-sm">Shadow SM</div>
+                <div class="shadow-box shadow-md">Shadow MD</div>
+                <div class="shadow-box shadow-lg">Shadow LG</div>
+                <div class="shadow-box shadow-xl">Shadow XL</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Manual de Estilo Web - Marca de Ropa © 2024</p>
+            <p class="footer-note">Creado como guía de referencia para el desarrollo del sitio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
